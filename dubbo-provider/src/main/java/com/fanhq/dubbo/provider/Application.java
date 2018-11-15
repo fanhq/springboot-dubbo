@@ -1,8 +1,8 @@
 package com.fanhq.dubbo.provider;
 
 import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 
 /**
  * Created by Hachel on 2018/11/14
@@ -12,7 +12,6 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 public class Application {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(Application.class)
-                .run(args);
+        SpringApplication.run(Application.class, args);
     }
 }
