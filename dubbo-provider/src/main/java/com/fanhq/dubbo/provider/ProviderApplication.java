@@ -9,9 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @DubboComponentScan(basePackages = "com.fanhq.dubbo.provider.service")
-public class Application {
+public class ProviderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(ProviderApplication.class, args);
     }
 }
