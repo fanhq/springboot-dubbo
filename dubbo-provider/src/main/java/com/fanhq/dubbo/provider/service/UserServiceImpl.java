@@ -8,7 +8,7 @@ import com.fanhq.dubbo.api.IUserService;
  */
 
 @Service(timeout = 5000)
-public class UserService implements IUserService {
+public class UserServiceImpl implements IUserService {
 
     @Override
     public String sayHello(String hello) {
