@@ -19,13 +19,13 @@ public class DubboConfiguration {
         return applicationConfig;
     }
 
-    //方法名字即使注册中心的名字
     @Bean
     public RegistryConfig localRegistry() {
         RegistryConfig registryConfig = new RegistryConfig();
         registryConfig.setAddress("zookeeper://127.0.0.1:2181");
         registryConfig.setClient("curator");
         registryConfig.setProtocol("dubbo");
+        //registryConfig.setId("localRegistry"); 这里设置id不起作用，可以通过方法的名字区分注册中心
         return registryConfig;
     }
 }
