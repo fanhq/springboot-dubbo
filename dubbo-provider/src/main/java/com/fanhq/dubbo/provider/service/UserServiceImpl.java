@@ -7,7 +7,7 @@ import com.fanhq.dubbo.api.IUserService;
  * Created by Hachel on 2018/11/14
  */
 
-@Service(timeout = 5000)
+@Service(timeout = 5000, registry = "localRegistry")
 public class UserServiceImpl implements IUserService {
 
     @Override

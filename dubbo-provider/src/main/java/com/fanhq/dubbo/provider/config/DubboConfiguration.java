@@ -19,8 +19,9 @@ public class DubboConfiguration {
         return applicationConfig;
     }
 
+    //方法名字即使注册中心的名字
     @Bean
-    public RegistryConfig registryConfig() {
+    public RegistryConfig localRegistry() {
         RegistryConfig registryConfig = new RegistryConfig();
         registryConfig.setAddress("zookeeper://127.0.0.1:2181");
         registryConfig.setClient("curator");
