@@ -25,7 +25,7 @@ public class DubboConfiguration {
         registryConfig.setAddress("zookeeper://127.0.0.1:2181");
         registryConfig.setClient("curator");
         registryConfig.setProtocol("dubbo");
-        //registryConfig.setId("localRegistry"); 这里设置id不起作用，可以通过方法的名字区分注册中心
+        //registryConfig.setId("localRegistry"); 这里设置不是注册中心的id，可以通过方法的名字区分注册中心
         return registryConfig;
     }
 }
